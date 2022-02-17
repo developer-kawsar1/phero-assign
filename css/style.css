@@ -67,6 +67,8 @@ button{
   font-weight: bold;
   border: none;
   padding: 12px 20px;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 

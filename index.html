@@ -1,22 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML</title>
-  
+  <title>Money Calculator</title>
+
   <!-- HTML -->
-  
+
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <p>Nothing to see here...</p>
+  <div class="main">
+    <div class="container">
+      <h1>Money calculator</h1>
+
+      <div class="row">
+        <div class="col-left">
+          <img src="images/Paypal_Monochromatic.svg" alt="">
+        </div>
+
+        <div class="col-right">
+              <!-- hendelling some error  -->
+          <p class="error">*please enter only number here</p>
+          <p class="error-nagetive">*only positive values are acceptable</p>
+          <p class="error-expance-income">*Expenses are more than income</p>
+          <p class="error-saving">*savings are more than balance it is not possible</p>
+          <p class="title">Income</p>
+
+          <div class="form-control">
+            <label for="income">Income</label>
+
+            <input type="text" placeholder="income" class="border" id="income">
+          </div>
+          <p class="title">Expanses</p>
+
+          <div class="form-control">
+            <label for="food">Food</label>
+
+            <input type="text" placeholder="food" id="food">
+          </div>
+
+          <div class="form-control">
+            <label for="rent">Rent</label>
+
+            <input type="text" placeholder="rent" id="rent">
+          </div>
+          <div class="form-control">
+            <label for="income">Clothes</label>
+
+            <input type="text" placeholder="clothes" id="clothes">
+          </div>
+
+
+
+          <button class="bg-red-300" id="calculate">Calculate</button>
+          <br>
+          <p>Total Expances :<span id="total-expance">0</span></p>
+          <p>Balance: <span id="total-balance">0</span></p>
+
+          <div>
+            <span>save</span> <input type="text" id="save-input">% <button onclick="saveBtn()">Save</button>
+          </div>
+          <p>saving balance:<span id="saving-balance">0</span></p>
+          <p>Remaining balance: <span id="remaining">0</span> </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- calculate -->
+
+
   <!-- Project -->
-  <script src="main.js"></script>
+  <script src="js/another.js"></script>
 </body>
+
 </html>
